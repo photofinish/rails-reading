@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+
+git_path = File.expand_path('../../../.git', __FILE__)
+
+if File.exist?(git_path)
+  railties_path = File.expand_path('../../lib', __FILE__)                  # 如果是git项目, 将lib目录下的文件加入dir_path的队列前方
+  $:.unshift(railties_path)
+end
+require "rails/cli"
+
+
+
+
+
+
+
+
+
+
+
+
+
